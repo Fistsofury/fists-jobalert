@@ -1,6 +1,8 @@
+
 body {
+    display: none;
     font-family: 'Times New Roman', serif;
-    background-image: url('../app/css/partchment_bk.jpeg');
+    background-image: url('../css/Partchment_bk.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
