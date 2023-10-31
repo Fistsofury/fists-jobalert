@@ -41,8 +41,9 @@ end
 
 function GetPlayersWithJob(jobName)
     local players = {}
+    local user = VORP.getCharacter(source)
     for _, playerId in ipairs(GetPlayers()) do
-        local playerJob = exports.vorp_core:vorp_getJob(playerId) --check getjob
+        local playerJob = user.job --check getjob
         if playerJob.name == jobName then
             table.insert(players, playerId)
         end

@@ -1,3 +1,9 @@
+VORPcore = {}
+TriggerEvent("getCore", function(core)
+    VORPcore = core
+end)
+
+
 local activeAlerts = {}
 
 RegisterCommand("calldoctor", function(source, args, rawCommand)
@@ -28,7 +34,8 @@ AddEventHandler('fists-joblert:updateAlerts', function(alerts)
 end)
 
 function IsJob(jobType)
-    local playerJob = exports.vorp_core:vorp_getJob() -- check get job
+    local user = VORPcore.getUser(_source).getUsedCharacter
+    local playerJob = user.job -- check get job
     local jobNames = Config[jobType..'Jobs']
     if jobNames then
         for _, jobName in pairs(jobNames) do
