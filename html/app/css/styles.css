@@ -1,0 +1,47 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-image: url('../app/css/partchment_bk.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.alert-list {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.alert-item {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert-item h3 {
+    margin-top: 0;
+}
+
+.assign-btn, .cancel-btn {
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.assign-btn:hover, .cancel-btn:hover {
+    background-color: #fff;
+    color: #8b4513;
+    border: 1px solid #8b4513;
+}
